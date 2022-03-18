@@ -9,7 +9,7 @@ import Posters from '../Components/Poster/Posters';
 import { addresses } from '../config';
 
 const AppRouter = () => {
-  const isAuth = true;
+  const isAuth = false;
   return (
     <Grid>
       {isAuth ? (
