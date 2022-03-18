@@ -1,25 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import './assets/fonts/index'
-import GlobalStyle from './style/global'
-import Home from './views/Home/Home'
-import Projects from './views/Projects/Projects'
+import AppRouter from './Router/AppRouter';
 
-function App() {
+const App = () => {
   return (
-    <div style={{ paddingRight: 16 }}>
-      <GlobalStyle />
+    <div>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/experience" element={} />
-        <Route path="/bio" element={} /> */}
-          <Route path="/*" element={<Navigate replace to="/" />} />
-        </Routes>
+        <AppRouter />
       </BrowserRouter>
     </div>
   )
-}
+};
 
-export default App
+export default App;
