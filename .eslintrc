@@ -3,52 +3,54 @@
     "browser": true,
     "node": true,
     "es6": true
-},
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",
     "sourceType": "module",
     "tsconfigRootDir": "./",
     "ecmaFeatures": {
-        "jsx": true
+      "jsx": true
     }
-},
+  },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "react-hooks",
-    "react"
-  ],
+  "plugins": ["@typescript-eslint", "react-hooks", "react"],
   "rules": {
     "semi": 2,
-    "quotes": ["error", "single", {
-      "avoidEscape": true
-    }],
-    "arrow-parens": ["error", "as-needed"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    // "arrow-parens": ["error", "as-needed"],
 
-    "@typescript-eslint/interface-name-prefix": "error",
+    // "@typescript-eslint/interface-name-prefix": "error",
     "@typescript-eslint/member-delimiter-style": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
-    "@typescript-eslint/ban-ts-ignore": "error",
+    // "@typescript-eslint/ban-ts-ignore": "error",
 
     "react/jsx-key": 2,
     "react/display-name": "off",
     "react/prop-types": "off",
     "react/jsx-uses-vars": "error",
-    "react/self-closing-comp": ["error", {
-      "component": true,
-      "html": true
-    }]
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

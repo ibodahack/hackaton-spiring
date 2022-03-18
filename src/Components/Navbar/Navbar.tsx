@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 import { addresses } from '../../config';
 
 interface SettingInterface {
-  id: string,
-  title: string,
-  path: string,
+  id: string;
+  title: string;
+  path: string;
 }
 
-const settings: SettingInterface[]  = [
+const settings: SettingInterface[] = [
   {
     id: '1',
     title: 'Афиша',
@@ -23,14 +23,14 @@ const settings: SettingInterface[]  = [
   {
     id: '3',
     title: 'Создать',
-    path: addresses.add
-  }
+    path: addresses.add,
+  },
 ];
 
 const Navbar = () => {
   return (
     <Grid item xs={4}>
-      <Grid       
+      <Grid
         style={{
           position: 'sticky',
           top: 50,
@@ -39,20 +39,20 @@ const Navbar = () => {
           borderRadius: 20,
         }}
       >
-      <Grid container justifyContent="center">
-        <Typography variant="h5">Навигация</Typography>
-      </Grid>
-      <Grid>
-        {settings.map(setting => {
-          return (
-            <NavLink to={setting.path} key={setting.id}>
-              <Grid>
-                <Typography>{setting.title}</Typography>
-              </Grid>
-            </NavLink>
-          );
-        })}
-      </Grid>
+        <Grid container justifyContent="center">
+          <Typography variant="h5">Навигация</Typography>
+        </Grid>
+        <Grid>
+          {settings.map((setting) => {
+            return (
+              <NavLink to={setting.path} key={setting.id}>
+                <Grid>
+                  <Typography>{setting.title}</Typography>
+                </Grid>
+              </NavLink>
+            );
+          })}
+        </Grid>
       </Grid>
     </Grid>
   );

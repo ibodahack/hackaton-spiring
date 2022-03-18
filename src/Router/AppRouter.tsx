@@ -12,7 +12,7 @@ const AppRouter = () => {
   const isAuth = true;
   return (
     <Grid>
-      {isAuth ? 
+      {isAuth ? (
         <Grid container>
           <Navbar />
           <Grid xs>
@@ -24,12 +24,12 @@ const AppRouter = () => {
             </Routes>
           </Grid>
         </Grid>
-      : 
-      <Routes>
-        <Route element={<Login />} path="/login" />
-        <Route element={<Navigate to="/login" />} path="*" />
-      </Routes>
-      }
+      ) : (
+        <Routes>
+          <Route element={<Login />} path="/login" />
+          <Route element={<Navigate to="/login" />} path="*" />
+        </Routes>
+      )}
     </Grid>
   );
 };

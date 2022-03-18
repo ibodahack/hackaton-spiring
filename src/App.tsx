@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import AppRouter from './Router/AppRouter';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <AppRouter />
       </BrowserRouter>
     </div>
-  )
+  );
 };
 
 export default App;
