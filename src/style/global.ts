@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from 'styled-components'
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 const resetStyles = css`
   /* Global */
@@ -161,9 +161,9 @@ const resetStyles = css`
     -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
   }
-`
+`;
 
-const GlobalStyle = createGlobalStyle`
+export default createGlobalStyle`
   ${resetStyles}
 
   body {
@@ -213,7 +213,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 22px;
     }
   }
-`
+`;
 
 export const Wrapper = styled.div`
   position: relative;
@@ -221,10 +221,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   min-height: 100vh;
   padding-top: 165px;
-  
+
   @media (max-width: 767px) {
     padding-top: 120px;
   }
-`
-
-export default GlobalStyle
+`;

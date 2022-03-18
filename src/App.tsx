@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import AppRouter from './Router/AppRouter';
+import GlobalStyles from './style/global';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>
+      <GlobalStyles />
     </div>
   );
 };
